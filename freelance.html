@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freelance Work - AI/ML Portfolio</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <a href="index.html" class="logo">Your Name</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="my-work.html">My Work</a></li>
+                <li><a href="freelance.html" class="active">Freelance</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                    <span class="theme-icon">🌙</span>
+                </button>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Freelance Work</h1>
+            <p>Client projects, consulting, and professional services delivered over 2 years</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="work-section">
+        <div class="container">
+            <div class="work-layout">
+                <!-- Left Sidebar -->
+                <aside class="sidebar">
+                    <div class="sidebar-section">
+                        <h3 class="sidebar-title">✅ Delivered</h3>
+                        <ul class="sidebar-menu">
+                            <li><a href="#" class="sidebar-link" data-category="student-projects">Student Projects</a></li>
+                            <li><a href="#" class="sidebar-link" data-category="websites">Websites</a></li>
+                            <li><a href="#" class="sidebar-link" data-category="dashboards">Dashboards</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="sidebar-section">
+                        <h3 class="sidebar-title">🔒 Client PoCs</h3>
+                        <ul class="sidebar-menu">
+                            <li><a href="#" class="sidebar-link" data-category="plotly-poc">Plotly Demo</a></li>
+                            <li><a href="#" class="sidebar-link" data-category="energy-design">Energy Design</a></li>
+                        </ul>
+                    </div>
+                </aside>
+
+                <!-- Right Content Area -->
+                <main class="content-area">
+                    <!-- Welcome Content (Default) -->
+                    <div id="welcome-content" class="content-panel active">
+                        <h2>Welcome to My Freelance Portfolio</h2>
+                        <p>Over 2 years, I've delivered 15+ projects to individual clients, students, and companies across various domains.</p>
+                        
+                        <div class="guide-box">
+                            <h3>Project Categories:</h3>
+                            <ul>
+                                <li><strong>Delivered Projects:</strong> Complete implementations with code and documentation</li>
+                                <li><strong>Client PoCs:</strong> Proof-of-concept demonstrations with confidential requirements</li>
+                            </ul>
+                        </div>
+
+                        <div class="highlight-box">
+                            <h3>✨ Freelance Highlights</h3>
+                            <ul>
+                                <li><strong>10+ Student Projects</strong> - ML consulting and implementation</li>
+                                <li><strong>Full-Stack Applications</strong> - Web apps with complete functionality</li>
+                                <li><strong>Professional PoCs</strong> - Technical demonstrations for companies</li>
+                                <li><strong>System Design</strong> - Architecture and consultation services</li>
+                            </ul>
+                        </div>
+
+                        <div class="note-box">
+                            <p><strong>Note on Confidentiality:</strong> Some projects involve client-proprietary data or requirements. For these, I provide architecture diagrams, sanitized examples, and technical methodology while respecting confidentiality agreements.</p>
+                        </div>
+                    </div>
+
+                    <!-- Student Projects Content -->
+                    <div id="student-projects-content" class="content-panel">
+                        <h2>🎓 Student Project Consulting</h2>
+                        <p>Guided 10+ students through complete ML project lifecycle from problem definition to deployment.</p>
+                        
+                        <div class="status-badge">
+                            <span class="badge-complete">✅ All Projects Delivered</span>
+                        </div>
+
+                        <div class="service-description">
+                            <h3>Consulting Services Provided:</h3>
+                            <ul>
+                                <li>Problem formulation and project scope definition</li>
+                                <li>Model selection and architecture design</li>
+                                <li>Data preprocessing and feature engineering</li>
+                                <li>Model training, tuning, and optimization</li>
+                                <li>Code review and best practices guidance</li>
+                                <li>Documentation and presentation preparation</li>
+                            </ul>
+                        </div>
+
+                        <h3 class="projects-heading">📦 Major Projects</h3>
+                        <div class="projects-grid">
+                            <div class="project-card featured">
+                                <h4>Face License Verification System</h4>
+                                <p>Computer vision system for verifying driver's licenses using face recognition and document validation.</p>
+                                <div class="card-tech">
+                                    <span>OpenCV</span>
+                                    <span>Face Recognition</span>
+                                    <span>OCR</span>
+                                    <span>Deep Learning</span>
+                                </div>
+                                <div class="project-details">
+                                    <strong>Deliverables:</strong>
+                                    <ul>
+                                        <li>Complete implementation with preprocessing pipeline</li>
+                                        <li>Face detection and recognition module</li>
+                                        <li>Document text extraction and validation</li>
+                                        <li>Accuracy: 94% on test dataset</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="project-card featured">
+                                <h4>Speech Emotion Recognition</h4>
+                                <p>Audio processing system to classify emotions from speech using deep learning models.</p>
+                                <div class="card-tech">
+                                    <span>Librosa</span>
+                                    <span>MFCC</span>
+                                    <span>CNN-LSTM</span>
+                                    <span>PyTorch</span>
+                                </div>
+                                <div class="project-details">
+                                    <strong>Deliverables:</strong>
+                                    <ul>
+                                        <li>Audio feature extraction pipeline</li>
+                                        <li>Custom CNN-LSTM architecture</li>
+                                        <li>Model training on multiple datasets</li>
+                                        <li>Real-time emotion prediction interface</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="project-card">
+                                <h4>Medical Image Classification</h4>
+                                <p>Disease detection from X-ray images using transfer learning.</p>
+                                <div class="card-tech">
+                                    <span>ResNet</span>
+                                    <span>Transfer Learning</span>
+                                    <span>Data Augmentation</span>
+                                </div>
+                            </div>
+
+                            <div class="project-card">
+                                <h4>Sentiment Analysis System</h4>
+                                <p>Multi-class sentiment classifier for product reviews.</p>
+                                <div class="card-tech">
+                                    <span>BERT</span>
+                                    <span>Transformers</span>
+                                    <span>Flask API</span>
+                                </div>
+                            </div>
+
+                            <div class="project-card">
+                                <h4>Fraud Detection Model</h4>
+                                <p>Anomaly detection for credit card transaction data.</p>
+                                <div class="card-tech">
+                                    <span>Isolation Forest</span>
+                                    <span>XGBoost</span>
+                                    <span>SMOTE</span>
+                                </div>
+                            </div>
+
+                            <div class="project-card">
+                                <h4>Crop Disease Prediction</h4>
+                                <p>Image classification for agricultural disease detection.</p>
+                                <div class="card-tech">
+                                    <span>CNN</span>
+                                    <span>Mobile Deployment</span>
+                                    <span>TFLite</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="additional-projects">
+                            <h3>Additional Projects (4+ more):</h3>
+                            <ul>
+                                <li>Recommendation System (Collaborative Filtering)</li>
+                                <li>Stock Price Prediction (LSTM)</li>
+                                <li>Fake News Detection (NLP)</li>
+                                <li>Traffic Sign Recognition (Computer Vision)</li>
+                            </ul>
+                        </div>
+
+                        <div class="impact-box">
+                            <h3>📊 Impact & Results:</h3>
+                            <p>All students successfully completed their projects with high academic grades. Multiple projects achieved 85-95% accuracy on validation sets and were presented at university symposiums.</p>
+                        </div>
+                    </div>
+
+                    <!-- Websites Content -->
+                    <div id="websites-content" class="content-panel">
+                        <h2>🌐 Website Development Projects</h2>
+                        <p>Full-stack web applications with complete functionality and database management.</p>
+                        
+                        <div class="status-badge">
+                            <span class="badge-complete">✅ Fully Functional</span>
+                        </div>
+
+                        <h3 class="projects-heading">📦 Delivered Websites</h3>
+                        <div class="projects-grid">
+                            <div class="project-card featured">
+                                <h4>Old Age Home Management System</h4>
+                                <p>Complete web application for managing old age home operations with admin panel and user management.</p>
+                                <div class="card-tech">
+                                    <span>Flask/Django</span>
+                                    <span>PostgreSQL</span>
+                                    <span>HTML/CSS/JS</span>
+                                    <span>Bootstrap</span>
+                                </div>
+                                <div class="project-details">
+                                    <strong>Features Implemented:</strong>
+                                    <ul>
+                                        <li>User authentication and role-based access</li>
+                                        <li>Resident management (registration, profiles, medical records)</li>
+                                        <li>Staff management and scheduling</li>
+                                        <li>Admin dashboard with analytics</li>
+                                        <li>Complete CRUD operations for all entities</li>
+                                        <li>Responsive design for mobile and desktop</li>
+                                    </ul>
+                                </div>
+                                <div class="note-box">
+                                    <p><strong>Status:</strong> Fully functional. Deployment handled separately by client.</p>
+                                </div>
+                            </div>
+
+                            <div class="project-card featured">
+                                <h4>Healthcare Dashboard</h4>
+                                <p>Real-time healthcare monitoring dashboard with patient data visualization and analytics.</p>
+                                <div class="card-tech">
+                                    <span>Streamlit</span>
+                                    <span>Plotly</span>
+                                    <span>MySQL</span>
+                                    <span>Python</span>
+                                </div>
+                                <div class="project-details">
+                                    <strong>Features Implemented:</strong>
+                                    <ul>
+                                        <li>Patient health metrics visualization</li>
+                                        <li>Interactive charts and graphs</li>
+                                        <li>Automated reporting system</li>
+                                        <li>Data export functionality</li>
+                                        <li>Real-time updates and notifications</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Dashboards Content -->
+                    <div id="dashboards-content" class="content-panel">
+                        <h2>📊 Dashboard & Analytics Projects</h2>
+                        <p>Custom dashboards for business intelligence and data visualization needs.</p>
+                        
+                        <div class="status-badge">
+                            <span class="badge-complete">✅ Delivered</span>
+                        </div>
+
+                        <div class="service-description">
+                            <h3>Dashboard Capabilities:</h3>
+                            <ul>
+                                <li>Interactive data visualization with Plotly/Dash</li>
+                                <li>Real-time data updates and monitoring</li>
+                                <li>Custom KPI tracking and metrics</li>
+                                <li>Automated report generation</li>
+                                <li>User-friendly interface design</li>
+                                <li>Export and sharing functionality</li>
+                            </ul>
+                        </div>
+
+                        <h3 class="projects-heading">📦 Dashboard Projects</h3>
+                        <div class="projects-grid">
+                            <div class="project-card">
+                                <h4>Business Analytics Dashboard</h4>
+                                <p>KPI tracking and business metrics visualization for small businesses.</p>
+                                <div class="card-tech">
+                                    <span>Dash</span>
+                                    <span>Plotly</span>
+                                    <span>Pandas</span>
+                                </div>
+                            </div>
+
+                            <div class="project-card">
+                                <h4>Sales Performance Dashboard</h4>
+                                <p>Real-time sales tracking with predictive analytics.</p>
+                                <div class="card-tech">
+                                    <span>Streamlit</span>
+                                    <span>ML Forecasting</span>
+                                    <span>PostgreSQL</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="note-box">
+                            <p><strong>Note:</strong> Additional dashboard projects created using the ML Management Platform, customized for specific client needs.</p>
+                        </div>
+                    </div>
+
+                    <!-- Plotly PoC Content -->
+                    <div id="plotly-poc-content" class="content-panel">
+                        <h2>🔒 Plotly Code Rewriting PoC</h2>
+                        <p>AI-powered system for rewriting Plotly visualization code based on natural language prompts.</p>
+                        
+                        <div class="status-badge">
+                            <span class="badge-confidential">🔒 Confidential Demo PoC</span>
+                        </div>
+
+                        <div class="confidentiality-notice">
+                            <h3>⚠️ Confidentiality Notice</h3>
+                            <p>This was a proof-of-concept demonstration for client evaluation. Original prompts, datasets, and production code are confidential and cannot be shared. The information below shows the technical approach using sanitized examples.</p>
+                        </div>
+
+                        <div class="project-description">
+                            <h3>Project Overview:</h3>
+                            <p>Developed a system that intelligently rewrites Plotly visualization code based on natural language instructions, ensuring generated visualizations match specified requirements.</p>
+                        </div>
+
+                        <div class="workflow-box">
+                            <h3>System Workflow:</h3>
+                            <div class="workflow-steps">
+                                <div class="workflow-step">
+                                    <strong>1. Input</strong>
+                                    <p>Natural language prompt + Reference image + Two code files (generator + visualization)</p>
+                                </div>
+                                <div class="workflow-step">
+                                    <strong>2. Analysis</strong>
+                                    <p>Parse prompt requirements, analyze existing code structure, identify modification points</p>
+                                </div>
+                                <div class="workflow-step">
+                                    <strong>3. Code Rewriting</strong>
+                                    <p>Intelligently modify both generator and visualization code to match prompt specifications</p>
+                                </div>
+                                <div class="workflow-step">
+                                    <strong>4. Output</strong>
+                                    <p>Modified code files + Generated visualization matching requirements</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tech-stack">
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">Plotly</span>
+                            <span class="tech-badge">NLP</span>
+                            <span class="tech-badge">Code Analysis</span>
+                            <span class="tech-badge">LLMs</span>
+                        </div>
+
+                        <div class="technical-approach">
+                            <h3>Technical Approach:</h3>
+                            <ul>
+                                <li><strong>Prompt Understanding:</strong> Extract specific requirements and constraints from natural language</li>
+                                <li><strong>Code Structure Analysis:</strong> Parse and understand relationships between generator and visualization code</li>
+                                <li><strong>Intelligent Modification:</strong> Apply changes while maintaining code coherence and functionality</li>
+                                <li><strong>Validation:</strong> Ensure output visualization matches prompt specifications</li>
+                            </ul>
+                        </div>
+
+                        <div class="sanitized-example">
+                            <h3>Sanitized Example:</h3>
+                            <p><strong>Sample Prompt:</strong> "Change the chart to show monthly trends instead of daily, and use blue color scheme"</p>
+                            <p><strong>System Action:</strong> Modifies data aggregation logic in generator code, updates visualization parameters for monthly view, applies blue color palette</p>
+                            <p><strong>Result:</strong> Successfully generated modified visualization matching requirements</p>
+                        </div>
+
+                        <div class="outcome-box">
+                            <h3>Project Outcome:</h3>
+                            <p>Successfully demonstrated technical feasibility and capability. Client proceeded with full implementation independently after PoC validation.</p>
+                        </div>
+                    </div>
+
+                    <!-- Energy Design Content -->
+                    <div id="energy-design-content" class="content-panel">
+                        <h2>📋 Energy Demand Forecasting System Design</h2>
+                        <p>Comprehensive technical consultation and system architecture design for energy forecasting platform.</p>
+                        
+                        <div class="status-badge">
+                            <span class="badge-consultation">📋 Technical Consultation & Design</span>
+                        </div>
+
+                        <div class="project-description">
+                            <h3>Consultation Scope:</h3>
+                            <p>Client required comprehensive understanding of ML concepts and practical system design for energy demand forecasting. Provided end-to-end technical guidance from fundamentals to deployment architecture.</p>
+                        </div>
+
+                        <div class="knowledge-transfer">
+                            <h3>Knowledge Transfer Delivered:</h3>
+                            
+                            <div class="knowledge-section">
+                                <h4>1. Machine Learning Fundamentals</h4>
+                                <ul>
+                                    <li>Core ML concepts and algorithm types</li>
+                                    <li>Model selection criteria for time series</li>
+                                    <li>Training, validation, and testing methodologies</li>
+                                    <li>Overfitting prevention and regularization</li>
+                                </ul>
+                            </div>
+
+                            <div class="knowledge-section">
+                                <h4>2. Time Series Specific Concepts</h4>
+                                <ul>
+                                    <li>Time series analysis fundamentals</li>
+                                    <li>Seasonal patterns and trend decomposition</li>
+                                    <li>Model comparison: XGBoost, LSTM, TCN, TFT</li>
+                                    <li>Feature engineering for temporal data</li>
+                                    <li>Rolling windows and lag features</li>
+                                </ul>
+                            </div>
+
+                            <div class="knowledge-section">
+                                <h4>3. Feature Engineering Strategy</h4>
+                                <ul>
+                                    <li>Sliding windows and rolling statistics</li>
+                                    <li>Cyclical encodings (sin/cos transformations)</li>
+                                    <li>High-frequency sensor data processing</li>
+                                    <li>Weather data integration techniques</li>
+                                    <li>Feature importance and selection</li>
+                                </ul>
+                            </div>
+
+                            <div class="knowledge-section">
+                                <h4>4. System Architecture Design</h4>
+                                <ul>
+                                    <li>ETL pipeline design with Apache Airflow</li>
+                                    <li>Data integration: SCADA systems, weather APIs</li>
+                                    <li>Database design: PostgreSQL schema for time series</li>
+                                    <li>API deployment patterns with Flask</li>
+                                    <li>Dashboard design with Plotly Dash</li>
+                                    <li>Deployment architecture: AWS EC2, Docker</li>
+                                </ul>
+                            </div>
+
+                            <div class="knowledge-section">
+                                <h4>5. Practical PoC Demonstration</h4>
+                                <ul>
+                                    <li>Complete system architecture visualization</li>
+                                    <li>Component interaction flows</li>
+                                    <li>Model training and prediction workflows</li>
+                                    <li>Deployment considerations and best practices</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="tech-stack">
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">XGBoost</span>
+                            <span class="tech-badge">LSTM</span>
+                            <span class="tech-badge">Airflow</span>
+                            <span class="tech-badge">PostgreSQL</span>
+                            <span class="tech-badge">Flask</span>
+                            <span class="tech-badge">Plotly Dash</span>
+                            <span class="tech-badge">AWS</span>
+                        </div>
+
+                        <div class="deliverables-box">
+                            <h3>Consultation Deliverables:</h3>
+                            <ul>
+                                <li>Complete system architecture diagram</li>
+                                <li>ETL pipeline design documentation</li>
+                                <li>Model comparison analysis (multiple algorithms)</li>
+                                <li>Feature engineering strategy document</li>
+                                <li>Database schema design</li>
+                                <li>API endpoint specifications</li>
+                                <li>Deployment architecture design</li>
+                                <li>Dashboard UI/UX mockups</li>
+                            </ul>
+                        </div>
+
+                        <div class="architecture-components">
+                            <h3>System Architecture Components:</h3>
+                            <div class="component-grid">
+                                <div class="component-item">
+                                    <strong>Data Layer</strong>
+                                    <p>SCADA integration, Weather APIs, PostgreSQL storage</p>
+                                </div>
+                                <div class="component-item">
+                                    <strong>ETL Pipeline</strong>
+                                    <p>Airflow workflows, data cleaning, feature engineering</p>
+                                </div>
+                                <div class="component-item">
+                                    <strong>ML Layer</strong>
+                                    <p>Model training, hyperparameter tuning, evaluation</p>
+                                </div>
+                                <div class="component-item">
+                                    <strong>API Layer</strong>
+                                    <p>Flask REST API, authentication, rate limiting</p>
+                                </div>
+                                <div class="component-item">
+                                    <strong>Dashboard</strong>
+                                    <p>Plotly Dash, real-time updates, visualization</p>
+                                </div>
+                                <div class="component-item">
+                                    <strong>Deployment</strong>
+                                    <p>AWS EC2, Docker containers, CI/CD pipeline</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="model-comparison">
+                            <h3>Model Selection Analysis:</h3>
+                            <p>Provided detailed comparison of forecasting algorithms:</p>
+                            <ul>
+                                <li><strong>XGBoost:</strong> Best for short-term predictions, fast training</li>
+                                <li><strong>LSTM:</strong> Captures long-term dependencies, handles sequential patterns</li>
+                                <li><strong>TCN (Temporal Convolutional Networks):</strong> Efficient alternative to RNNs</li>
+                                <li><strong>TFT (Temporal Fusion Transformers):</strong> State-of-the-art for multi-horizon forecasting</li>
+                            </ul>
+                        </div>
+
+                        <div class="project-status">
+                            <h3>Project Status:</h3>
+                            <p><strong>📋 Design & Consultation Phase Complete</strong></p>
+                            <p>Provided complete technical foundation and architecture. Implementation managed independently by client based on provided designs and recommendations.</p>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Your Name. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+                <a href="https://huggingface.co/yourusername" target="_blank">HuggingFace</a>
+                <a href="https://kaggle.com/yourusername" target="_blank">Kaggle</a>
+                <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

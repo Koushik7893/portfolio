@@ -5,13 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Work - AI/ML Portfolio</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <script>
+    (function() {
+        const theme = localStorage.getItem('theme') || 'dark';
+        document.documentElement.setAttribute('data-theme', theme);
+    })();
+    </script>
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-left">
-                <a href="index.html" class="logo">Your Name</a>
+                <a href="index.html" class="logo">Koushik Reddy</a>
             </div>
             <ul class="nav-menu">
                 <li><a href="index.html">Home</a></li>
@@ -46,6 +52,7 @@
                             <li><a href="#" class="sidebar-link" data-category="cv">Computer Vision</a></li>
                             <li><a href="#" class="sidebar-link" data-category="timeseries">Time Series</a></li>
                             <li><a href="#" class="sidebar-link" data-category="datascience">Data Science</a></li>
+                            <li><a href="#" class="sidebar-link" data-category="langchain">LangChain</a></li>
                         </ul>
                     </div>
 
@@ -61,7 +68,6 @@
                         <h3 class="sidebar-title">🛠️ Platforms</h3>
                         <ul class="sidebar-menu">
                             <li><a href="#" class="sidebar-link" data-category="ml-platform">ML Management</a></li>
-                            <li><a href="#" class="sidebar-link" data-category="content-gen">Content Generator</a></li>
                         </ul>
                     </div>
                 </aside>
@@ -78,6 +84,7 @@
                             <ul>
                                 <li>Click any category on the left to view projects</li>
                                 <li>Each project links to its public repository or deployment</li>
+                                <li>Gallery buttons provide visual documentation</li>
                                 <li>All code is available for verification on GitHub, HuggingFace, or Kaggle</li>
                             </ul>
                         </div>
@@ -85,10 +92,10 @@
                         <div class="highlight-box">
                             <h3>✨ Highlights</h3>
                             <ul>
-                                <li><strong>20+ Repositories</strong> covering NLP, Computer Vision, Time Series</li>
-                                <li><strong>15+ Fine-tuned LLMs</strong> deployed on HuggingFace</li>
-                                <li><strong>25+ Kaggle Notebooks</strong> with experiments and analysis</li>
-                                <li><strong>2 Production Platforms</strong> built from scratch</li>
+                                <li><strong>30+ Repositories</strong> covering NLP, Computer Vision, Time Series</li>
+                                <li><strong>14+ Fine-tuned LLMs</strong> deployed on HuggingFace</li>
+                                <li><strong>24+ Kaggle Notebooks</strong> with experiments and analysis</li>
+                                <li><strong>Production Platform</strong> built from scratch</li>
                             </ul>
                         </div>
                     </div>
@@ -96,91 +103,198 @@
                     <!-- NLP Content -->
                     <div id="nlp-content" class="content-panel">
                         <h2>📚 NLP Repository Collection</h2>
-                        <p>Built 8-14 repositories covering core NLP tasks. Each repository contains complete implementation with detailed documentation.</p>
+                        <p>Built 13+ repositories covering core NLP tasks from traditional methods to modern transformers. Each repository contains complete implementation with detailed documentation.</p>
                         
                         <div class="tech-stack">
                             <span class="tech-badge">Python</span>
                             <span class="tech-badge">PyTorch</span>
-                            <span class="tech-badge">TensorFlow</span>
                             <span class="tech-badge">Transformers</span>
+                            <span class="tech-badge">BERT</span>
                             <span class="tech-badge">Hugging Face</span>
-                        </div>
-
-                        <div class="topics-covered">
-                            <h3>Topics Covered:</h3>
-                            <ul>
-                                <li>Text Classification (Sentiment Analysis, Multi-class, Multi-label)</li>
-                                <li>Token Classification (NER, POS Tagging)</li>
-                                <li>Text Summarization (Abstractive, Extractive)</li>
-                                <li>Question Answering Systems</li>
-                                <li>Translation (Multi-language)</li>
-                                <li>Feature Extraction & Embeddings</li>
-                                <li>Text-to-Text Generation</li>
-                            </ul>
                         </div>
 
                         <h3 class="projects-heading">📦 Repositories</h3>
                         <div class="projects-grid">
                             <div class="project-card">
-                                <h4>Text Classification</h4>
-                                <p>Complete implementations for sentiment analysis, topic classification, and multi-label classification tasks.</p>
+                                <h4>Feature Extraction Techniques</h4>
+                                <p>Comprehensive techniques from traditional (BoW, TF-IDF) to modern transformers (BERT, Sentence-BERT, Doc2Vec) for text representation.</p>
                                 <div class="card-tech">
+                                    <span>Transformers</span>
+                                    <span>Word2Vec</span>
                                     <span>BERT</span>
+                                </div>
+                                <div class="project-buttons">
+                                    <a href="https://github.com/Koushik7893/nlp-feature-extraction-techniques" target="_blank" class="btn-code">View Code</a>
+                                    <a href="https://drive.google.com/drive/folders/12aD3CUesz4IkU_fmdusClPrmf3Sftrm4" target="_blank" class="btn-gallery">View Gallery</a>
+                                </div>
+                            </div>
+
+                            <div class="project-card">
+                                <h4>Binary Text Classification</h4>
+                                <p>Traditional ML approaches with Logistic Regression, SVM, Naive Bayes using TF-IDF, n-grams, and character-level features.</p>
+                                <div class="card-tech">
+                                    <span>Scikit-learn</span>
+                                    <span>TF-IDF</span>
+                                    <span>SVM</span>
+                                </div>
+                                <div class="project-buttons">
+                                    <a href="https://github.com/Koushik7893/binary-text-classification-nlp-ml" target="_blank" class="btn-code">View Code</a>
+                                    <a href="https://drive.google.com/drive/folders/12aD3CUesz4IkU_fmdusClPrmf3Sftrm4" target="_blank" class="btn-gallery">View Gallery</a>
+                                </div>
+                            </div>
+
+                            <div class="project-card">
+                                <h4>Multiclass Text Classification</h4>
+                                <p>AG News, Yahoo Answers, TREC datasets using Logistic Regression, BiLSTM with GloVe, DistilBERT, and RoBERTa with label smoothing.</p>
+                                <div class="card-tech">
+                                    <span>BiLSTM</span>
                                     <span>DistilBERT</span>
                                     <span>RoBERTa</span>
                                 </div>
-                                <a href="https://github.com/yourusername/text-classification" target="_blank" class="card-link">View on GitHub →</a>
-                            </div>
-
-                            <div class="project-card">
-                                <h4>Token Classification</h4>
-                                <p>Named Entity Recognition (NER) and Part-of-Speech (POS) tagging implementations with custom datasets.</p>
-                                <div class="card-tech">
-                                    <span>BERT-NER</span>
-                                    <span>SpaCy</span>
+                                <div class="project-buttons">
+                                    <a href="https://github.com/Koushik7893/multiclass-text-classification-nlp" target="_blank" class="btn-code">View Code</a>
+                                    <a href="https://drive.google.com/drive/folders/12aD3CUesz4IkU_fmdusClPrmf3Sftrm4" target="_blank" class="btn-gallery">View Gallery</a>
                                 </div>
-                                <a href="https://github.com/yourusername/token-classification" target="_blank" class="card-link">View on GitHub →</a>
                             </div>
 
                             <div class="project-card">
-                                <h4>Text Summarization</h4>
-                                <p>Both abstractive and extractive summarization techniques using transformer models.</p>
+                                <h4>Hierarchical Text Classification</h4>
+                                <p>Multi-level classification with flat classifiers, LCPN, BiLSTM, Hierarchical Attention Networks, and DistilBERT multi-heads.</p>
                                 <div class="card-tech">
-                                    <span>T5</span>
+                                    <span>HAN</span>
+                                    <span>DistilBERT</span>
+                                    <span>Multi-task</span>
+                                </div>
+                                <div class="project-buttons">
+                                    <a href="https://github.com/Koushik7893/hierarchical-text-classification-ml-dl-bert" target="_blank" class="btn-code">View Code</a>
+                                    <a href="https://drive.google.com/drive/folders/12aD3CUesz4IkU_fmdusClPrmf3Sftrm4" target="_blank" class="btn-gallery">View Gallery</a>
+                                </div>
+                            </div>
+
+                            <div class="project-card">
+                                <h4>Multilabel Text Classification</h4>
+                                <p>Multiple simultaneous labels using Logistic Regression, CNN, and BERT on RCV1, GoEmotions, and Jigsaw Toxic datasets.</p>
+                                <div class="card-tech">
+                                    <span>BERT</span>
+                                    <span>CNN</span>
+                                    <span>BCEWithLogits</span>
+                                </div>
+                                <div class="project-buttons">
+                                    <a href="https://github.com/Koushik7893/multilabel-text-classification-dl-bert" target="_blank" class="btn-code">View Code</a>
+                                    <a href="https://drive.google.com/drive/folders/12aD3CUesz4IkU_fmdusClPrmf3Sftrm4" target="_blank" class="btn-gallery">View Gallery</a>
+                                </div>
+                            </div>
+
+                            <div class="project-card">
+                                <h4>Ordinal Text Classification</h4>
+                                <p>Ordered labels (ratings) with ordinal logistic regression, LSTM, BERT+CORAL head for Amazon, IMDb, and Yelp reviews.</p>
+                                <div class="card-tech">
+                                    <span>BERT-CORAL</span>
+                                    <span>LSTM</span>
+                                    <span>Ordinal Loss</span>
+                                </div>
+                                <div class="project-buttons">
+                                    <a href="https://github.com/Koushik7893/ordinal-text-classification-bert-lstm-coral" target="_blank" class="btn-code">View Code</a>
+                                    <a href="https://drive.google.com/drive/folders/12aD3CUesz4IkU_fmdusClPrmf3Sftrm4" target="_blank" class="btn-gallery">View Gallery</a>
+                                </div>
+                            </div>
+
+                            <div class="project-card">
+                                <h4>Abstractive Summarization</h4>
+                                <p>Generate novel summaries using BART, PEGASUS, T5, Longformer, ProphetNet, and Long-T5 on CNN/DailyMail and XSum.</p>
+                                <div class="card-tech">
                                     <span>BART</span>
-                                    <span>Pegasus</span>
+                                    <span>PEGASUS</span>
+                                    <span>T5</span>
                                 </div>
-                                <a href="https://github.com/yourusername/summarization" target="_blank" class="card-link">View on GitHub →</a>
+                                <div class="project-buttons">
+                                    <a href="https://github.com/Koushik7893/abstractive-text-summarization-transformers" target="_blank" class="btn-code">View Code</a>
+                                    <a href="https://drive.google.com/drive/folders/12aD3CUesz4IkU_fmdusClPrmf3Sftrm4" target="_blank" class="btn-gallery">View Gallery</a>
+                                </div>
                             </div>
 
                             <div class="project-card">
-                                <h4>Question Answering</h4>
-                                <p>Extractive QA systems using SQuAD and custom datasets with BERT-based models.</p>
+                                <h4>Extractive Summarization</h4>
+                                <p>Select key sentences using TF-IDF, KMeans+SentenceBERT, BERTSum, and PageRank-based TextRank methods.</p>
                                 <div class="card-tech">
-                                    <span>BERT-QA</span>
-                                    <span>ELECTRA</span>
+                                    <span>BERTSum</span>
+                                    <span>TextRank</span>
+                                    <span>KMeans</span>
                                 </div>
-                                <a href="https://github.com/yourusername/question-answering" target="_blank" class="card-link">View on GitHub →</a>
+                                <div class="project-buttons">
+                                    <a href="https://github.com/Koushik7893/extractive-text-summarization-methods" target="_blank" class="btn-code">View Code</a>
+                                    <a href="https://drive.google.com/drive/folders/12aD3CUesz4IkU_fmdusClPrmf3Sftrm4" target="_blank" class="btn-gallery">View Gallery</a>
+                                </div>
                             </div>
 
                             <div class="project-card">
-                                <h4>Translation</h4>
-                                <p>Neural machine translation for multiple language pairs using sequence-to-sequence models.</p>
+                                <h4>Multi-Document Summarization</h4>
+                                <p>Summarize multiple documents using Longformer, GAT+SentenceBERT, and Hierarchical Attention Transformers (HATSum).</p>
+                                <div class="card-tech">
+                                    <span>Longformer</span>
+                                    <span>GAT</span>
+                                    <span>HATSum</span>
+                                </div>
+                                <div class="project-buttons">
+                                    <a href="https://github.com/Koushik7893/multi-document-text-summarization-models" target="_blank" class="btn-code">View Code</a>
+                                    <a href="https://drive.google.com/drive/folders/12aD3CUesz4IkU_fmdusClPrmf3Sftrm4" target="_blank" class="btn-gallery">View Gallery</a>
+                                </div>
+                            </div>
+
+                            <div class="project-card">
+                                <h4>Token Classification (NER)</h4>
+                                <p>BiLSTM-CRF on CoNLL-2003 with tagging schemes (BIO, IOBES), embeddings (GloVe, ELMo, BERT), and CRF decoding.</p>
+                                <div class="card-tech">
+                                    <span>BiLSTM-CRF</span>
+                                    <span>CoNLL-2003</span>
+                                    <span>NER</span>
+                                </div>
+                                <div class="project-buttons">
+                                    <a href="https://github.com/Koushik7893/token-classification-ner-techniques" target="_blank" class="btn-code">View Code</a>
+                                    <a href="https://drive.google.com/drive/folders/12aD3CUesz4IkU_fmdusClPrmf3Sftrm4" target="_blank" class="btn-gallery">View Gallery</a>
+                                </div>
+                            </div>
+
+                            <div class="project-card">
+                                <h4>Neural Machine Translation</h4>
+                                <p>Supervised fine-tuning of MarianMT (English-German) and MBart50 (English-Telugu) with BLEU evaluation.</p>
                                 <div class="card-tech">
                                     <span>MarianMT</span>
-                                    <span>T5</span>
+                                    <span>MBart50</span>
+                                    <span>BLEU</span>
                                 </div>
-                                <a href="https://github.com/yourusername/translation" target="_blank" class="card-link">View on GitHub →</a>
+                                <div class="project-buttons">
+                                    <a href="https://github.com/Koushik7893/neural-machine-translation-finetune" target="_blank" class="btn-code">View Code</a>
+                                    <a href="https://drive.google.com/drive/folders/12aD3CUesz4IkU_fmdusClPrmf3Sftrm4" target="_blank" class="btn-gallery">View Gallery</a>
+                                </div>
                             </div>
 
                             <div class="project-card">
-                                <h4>Feature Extraction</h4>
-                                <p>Sentence embeddings and text representation learning using various transformer architectures.</p>
+                                <h4>LoRA Adapter Translation</h4>
+                                <p>Parameter-efficient fine-tuning with LoRA on mBART for English-Telugu translation with minimal training.</p>
                                 <div class="card-tech">
-                                    <span>Sentence-BERT</span>
-                                    <span>Universal Encoder</span>
+                                    <span>LoRA</span>
+                                    <span>mBART</span>
+                                    <span>PEFT</span>
                                 </div>
-                                <a href="https://github.com/yourusername/feature-extraction" target="_blank" class="card-link">View on GitHub →</a>
+                                <div class="project-buttons">
+                                    <a href="https://github.com/Koushik7893/lora-adapter-translation" target="_blank" class="btn-code">View Code</a>
+                                    <a href="https://drive.google.com/drive/folders/12aD3CUesz4IkU_fmdusClPrmf3Sftrm4" target="_blank" class="btn-gallery">View Gallery</a>
+                                </div>
+                            </div>
+
+                            <div class="project-card">
+                                <h4>Few-shot & Zero-shot Translation</h4>
+                                <p>Back-translation, pivot translation (Kannada→English→Hindi), and cross-lingual transfer for low-resource languages.</p>
+                                <div class="card-tech">
+                                    <span>M2M-100</span>
+                                    <span>Pivot</span>
+                                    <span>Zero-shot</span>
+                                </div>
+                                <div class="project-buttons">
+                                    <a href="https://github.com/Koushik7893/fewshot-zeroshot-translation" target="_blank" class="btn-code">View Code</a>
+                                    <a href="https://drive.google.com/drive/folders/12aD3CUesz4IkU_fmdusClPrmf3Sftrm4" target="_blank" class="btn-gallery">View Gallery</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -195,89 +309,54 @@
                             <span class="tech-badge">PyTorch</span>
                             <span class="tech-badge">OpenCV</span>
                             <span class="tech-badge">YOLOv8</span>
-                            <span class="tech-badge">TensorFlow</span>
-                        </div>
-
-                        <div class="topics-covered">
-                            <h3>Complete Implementations:</h3>
-                            <ul>
-                                <li>Image Classification (CNNs, ResNet, EfficientNet)</li>
-                                <li>Object Detection (YOLO, Faster R-CNN, RetinaNet)</li>
-                                <li>Depth Estimation (Monocular & Stereo)</li>
-                                <li>Image Segmentation (Semantic, Instance, Panoptic)</li>
-                            </ul>
-                            <h3>Partial/Exploratory Work:</h3>
-                            <ul>
-                                <li>Keypoint Detection (Pose Estimation)</li>
-                                <li>Feature Extraction (SIFT, ORB, Deep Features)</li>
-                                <li>Video Concepts (Tracking, Action Recognition)</li>
-                            </ul>
+                            <span class="tech-badge">Transformers</span>
                         </div>
 
                         <h3 class="projects-heading">📦 Repositories</h3>
                         <div class="projects-grid">
                             <div class="project-card">
-                                <h4>Image Classification</h4>
-                                <p>Multi-class and multi-label image classification with custom datasets and pre-trained models.</p>
+                                <h4>Comprehensive Image Classification</h4>
+                                <p>Binary, multiclass, multilabel, and transformer models (ViT, Swin) with Grad-CAM explainability across MNIST, CIFAR, Tiny ImageNet, medical datasets.</p>
                                 <div class="card-tech">
-                                    <span>ResNet</span>
+                                    <span>ViT</span>
+                                    <span>Swin</span>
+                                    <span>Grad-CAM</span>
                                     <span>EfficientNet</span>
-                                    <span>Vision Transformer</span>
                                 </div>
-                                <a href="https://github.com/yourusername/image-classification" target="_blank" class="card-link">View on GitHub →</a>
+                                <div class="project-buttons">
+                                    <a href="https://github.com/Koushik7893/comprehensive-image-classification-study" target="_blank" class="btn-code">View Code</a>
+                                    <a href="https://drive.google.com/drive/folders/1zmhSK_qd2CqWlLRLF1NXsg8Zx5Kgo0pI" target="_blank" class="btn-gallery">View Gallery</a>
+                                </div>
                             </div>
 
                             <div class="project-card">
-                                <h4>Object Detection</h4>
-                                <p>Real-time object detection implementations using YOLO series and other modern architectures.</p>
+                                <h4>Object Detection Study</h4>
+                                <p>One-stage (YOLO, SSD, ResNet), two-stage (R-CNN family), and transformer detectors (DETR) with comprehensive techniques coverage including IoU, NMS, FPN.</p>
                                 <div class="card-tech">
                                     <span>YOLOv8</span>
                                     <span>Faster R-CNN</span>
-                                    <span>RetinaNet</span>
+                                    <span>DETR</span>
+                                    <span>FPN</span>
                                 </div>
-                                <a href="https://github.com/yourusername/object-detection" target="_blank" class="card-link">View on GitHub →</a>
-                            </div>
-
-                            <div class="project-card">
-                                <h4>Depth Estimation</h4>
-                                <p>Monocular depth estimation using deep learning for single-image 3D understanding.</p>
-                                <div class="card-tech">
-                                    <span>MiDaS</span>
-                                    <span>DenseDepth</span>
+                                <div class="project-buttons">
+                                    <a href="https://github.com/Koushik7893/object-detection-study" target="_blank" class="btn-code">View Code</a>
+                                    <a href="https://drive.google.com/drive/folders/1zmhSK_qd2CqWlLRLF1NXsg8Zx5Kgo0pI" target="_blank" class="btn-gallery">View Gallery</a>
                                 </div>
-                                <a href="https://github.com/yourusername/depth-estimation" target="_blank" class="card-link">View on GitHub →</a>
                             </div>
 
                             <div class="project-card">
                                 <h4>Image Segmentation</h4>
-                                <p>Semantic and instance segmentation for pixel-level image understanding.</p>
+                                <p>Semantic (FCN, U-Net, DeepLabv3) and instance segmentation (Mask R-CNN, SOLOv2) on medical (ISIC) and street scene (Cityscapes, COCO) datasets.</p>
                                 <div class="card-tech">
                                     <span>U-Net</span>
                                     <span>Mask R-CNN</span>
-                                    <span>DeepLab</span>
+                                    <span>DeepLabv3</span>
+                                    <span>SOLOv2</span>
                                 </div>
-                                <a href="https://github.com/yourusername/segmentation" target="_blank" class="card-link">View on GitHub →</a>
-                            </div>
-
-                            <div class="project-card">
-                                <h4>Keypoint Detection</h4>
-                                <p>Exploratory work in pose estimation and facial landmark detection.</p>
-                                <div class="card-tech">
-                                    <span>MediaPipe</span>
-                                    <span>OpenPose</span>
+                                <div class="project-buttons">
+                                    <a href="https://github.com/Koushik7893/image_segmentation" target="_blank" class="btn-code">View Code</a>
+                                    <a href="https://drive.google.com/drive/folders/1zmhSK_qd2CqWlLRLF1NXsg8Zx5Kgo0pI" target="_blank" class="btn-gallery">View Gallery</a>
                                 </div>
-                                <a href="https://github.com/yourusername/keypoint-detection" target="_blank" class="card-link">View on GitHub →</a>
-                            </div>
-
-                            <div class="project-card">
-                                <h4>Feature Extraction</h4>
-                                <p>Classical and deep learning approaches for image feature extraction and matching.</p>
-                                <div class="card-tech">
-                                    <span>SIFT</span>
-                                    <span>ORB</span>
-                                    <span>Deep Features</span>
-                                </div>
-                                <a href="https://github.com/yourusername/cv-features" target="_blank" class="card-link">View on GitHub →</a>
                             </div>
                         </div>
                     </div>
@@ -285,165 +364,226 @@
                     <!-- Time Series Content -->
                     <div id="timeseries-content" class="content-panel">
                         <h2>📈 Time Series Analysis Repository</h2>
-                        <p>Complete implementations of time series forecasting methods and analysis techniques.</p>
+                        <p><strong>Status:</strong> 🔄 In Development (50% complete)</p>
+                        
+                        <p>Building comprehensive implementation covering data loading, preprocessing, EDA, traditional models (ARIMA, Prophet) to deep learning (LSTM, TCN) and transformers with complete evaluation metrics and neat summary tables.</p>
                         
                         <div class="tech-stack">
                             <span class="tech-badge">Python</span>
                             <span class="tech-badge">Pandas</span>
-                            <span class="tech-badge">XGBoost</span>
-                            <span class="tech-badge">LSTM</span>
+                            <span class="tech-badge">ARIMA</span>
                             <span class="tech-badge">Prophet</span>
+                            <span class="tech-badge">LSTM</span>
+                            <span class="tech-badge">Transformers</span>
                         </div>
 
                         <div class="topics-covered">
-                            <h3>Techniques Implemented:</h3>
+                            <h3>Planned Coverage:</h3>
                             <ul>
-                                <li>ARIMA/SARIMA Models</li>
-                                <li>Exponential Smoothing</li>
-                                <li>Prophet (Facebook's forecasting tool)</li>
-                                <li>LSTM & GRU Networks</li>
-                                <li>XGBoost for Time Series</li>
-                                <li>Feature Engineering for Time Series</li>
-                                <li>Seasonality Decomposition</li>
+                                <li>Data loading and preprocessing for time series</li>
+                                <li>Comprehensive EDA and visualization</li>
+                                <li>Traditional methods (ARIMA, SARIMA, Prophet, Exponential Smoothing)</li>
+                                <li>Deep learning (LSTM, GRU, TCN)</li>
+                                <li>Transformer models for forecasting</li>
+                                <li>All evaluation metrics with summary tables</li>
+                                <li>Model selection guidelines</li>
                             </ul>
                         </div>
 
-                        <h3 class="projects-heading">📦 Repository</h3>
-                        <div class="projects-grid">
-                            <div class="project-card featured">
-                                <h4>Time Series Forecasting</h4>
-                                <p>Comprehensive repository covering classical statistical methods to modern deep learning approaches for time series prediction.</p>
-                                <div class="card-tech">
-                                    <span>ARIMA</span>
-                                    <span>LSTM</span>
-                                    <span>XGBoost</span>
-                                    <span>Prophet</span>
-                                </div>
-                                <a href="https://github.com/yourusername/time-series" target="_blank" class="card-link">View on GitHub →</a>
-                            </div>
+                        <div class="note-box">
+                            <p><strong>Note:</strong> Repository will be published once complete with full implementation and documentation.</p>
+                        </div>
+
+                        <div class="project-buttons">
+                            <a href="https://drive.google.com/drive/folders/1qojAkACEFNq-Pb5Ke8wqTpWJLnHTK4Pw" target="_blank" class="btn-gallery">Preview Gallery</a>
                         </div>
                     </div>
 
                     <!-- Data Science Content -->
                     <div id="datascience-content" class="content-panel">
                         <h2>📊 Data Science Fundamentals Repository</h2>
-                        <p>Comprehensive reference implementation covering the entire data science pipeline from data loading to model evaluation.</p>
+                        <p><strong>Status:</strong> 🔄 In Development (60% complete)</p>
+                        
+                        <p>Building end-to-end data science reference covering 15+ modules from data loading to monitoring with comprehensive tables, examples, and best practices.</p>
                         
                         <div class="tech-stack">
                             <span class="tech-badge">Python</span>
                             <span class="tech-badge">Pandas</span>
                             <span class="tech-badge">Scikit-learn</span>
                             <span class="tech-badge">Seaborn</span>
-                            <span class="tech-badge">Matplotlib</span>
+                            <span class="tech-badge">Advanced EDA</span>
                         </div>
 
                         <div class="topics-covered">
-                            <h3>Content Coverage:</h3>
+                            <h3>Completed Modules (60%):</h3>
                             <ul>
-                                <li><strong>Data Loading & Preprocessing:</strong> CSV, JSON, SQL, missing data handling</li>
-                                <li><strong>Exploratory Data Analysis (EDA):</strong> Distribution analysis, outlier detection, visualization</li>
-                                <li><strong>Correlation Methods:</strong> Pearson, Spearman, Kendall, Cramér's V</li>
-                                <li><strong>Feature Engineering:</strong> Scaling, encoding, transformation techniques</li>
-                                <li><strong>Classification Metrics:</strong> Accuracy, Precision, Recall, F1, ROC-AUC, Confusion Matrix</li>
-                                <li><strong>Regression Metrics:</strong> MSE, RMSE, MAE, R², Adjusted R²</li>
-                                <li><strong>Cross-validation:</strong> K-fold, Stratified, Time-series split</li>
+                                <li><strong>Data Loading:</strong> 11 methods from structured files to synthetic generation</li>
+                                <li><strong>Data Cleaning:</strong> 14 techniques for missing values, outliers, encoding, scaling</li>
+                                <li><strong>EDA:</strong> 12 analysis types with correlation methods and visualizations</li>
+                                <li><strong>Imbalanced Data:</strong> 8 techniques including resampling and cost-sensitive learning</li>
+                                <li><strong>Feature Engineering:</strong> 8 approaches for creation, transformation, selection</li>
+                                <li><strong>Data-Centric AI:</strong> 12 practices for label quality and validation</li>
+                                <li><strong>Causal Inference:</strong> 8 methods for understanding causality</li>
                             </ul>
                         </div>
 
-                        <h3 class="projects-heading">📦 Repository</h3>
-                        <div class="projects-grid">
-                            <div class="project-card featured">
-                                <h4>Data Science Complete Guide</h4>
-                                <p>End-to-end data science reference with implementations of all major techniques, metrics, and best practices.</p>
-                                <div class="card-tech">
-                                    <span>Pandas</span>
-                                    <span>Scikit-learn</span>
-                                    <span>Visualization</span>
-                                    <span>Statistics</span>
-                                </div>
-                                <a href="https://github.com/yourusername/data-science" target="_blank" class="card-link">View on GitHub →</a>
-                            </div>
+                        <div class="topics-covered">
+                            <h3>Planned Modules (40%):</h3>
+                            <ul>
+                                <li>Tabular Foundation Models (TFMs)</li>
+                                <li>Data Splitting & Validation strategies</li>
+                                <li>Modeling (baseline to advanced AutoML)</li>
+                                <li>Comprehensive Evaluation metrics</li>
+                                <li>Hyperparameter Tuning techniques</li>
+                                <li>Model Explainability (SHAP, LIME)</li>
+                                <li>Model Exporting and deployment</li>
+                                <li>Drift Detection & Monitoring</li>
+                            </ul>
+                        </div>
+
+                        <div class="note-box">
+                            <p><strong>Note:</strong> Repository will be published once all modules are complete with detailed notebooks and reference tables.</p>
+                        </div>
+
+                        <div class="project-buttons">
+                            <a href="https://drive.google.com/drive/folders/1Fa2AHrijHQjE4e-9h09WywCFU-kOmaUR" target="_blank" class="btn-gallery">Preview Gallery</a>
+                        </div>
+                    </div>
+
+                    <!-- LangChain Content -->
+                    <div id="langchain-content" class="content-panel">
+                        <h2>🔗 LangChain Integration Framework</h2>
+                        <p>Multi-tool integration project showcasing LLM application development with various AI frameworks and tools.</p>
+                        
+                        <div class="tech-stack">
+                            <span class="tech-badge">LangChain</span>
+                            <span class="tech-badge">OpenAI</span>
+                            <span class="tech-badge">HuggingFace</span>
+                            <span class="tech-badge">Ollama</span>
+                            <span class="tech-badge">NVIDIA-NIM</span>
+                            <span class="tech-badge">GraphDB</span>
+                            <span class="tech-badge">FastAPI</span>
+                        </div>
+
+                        <div class="topics-covered">
+                            <h3>Integrated Tools & Technologies:</h3>
+                            <ul>
+                                <li><strong>LangChain:</strong> Framework for LLM-powered applications</li>
+                                <li><strong>OpenAI:</strong> GPT models via API integration</li>
+                                <li><strong>HuggingFace:</strong> Open-source model integration</li>
+                                <li><strong>Codellama:</strong> Code-related tasks and generation</li>
+                                <li><strong>NVIDIA-NIM:</strong> Accelerated NLP processing</li>
+                                <li><strong>Ollama:</strong> Multi-model execution framework</li>
+                                <li><strong>GraphDB:</strong> Knowledge base management</li>
+                                <li><strong>FastAPI:</strong> API creation and deployment</li>
+                            </ul>
+                        </div>
+
+                        <div class="features-list">
+                            <h3>Key Features:</h3>
+                            <ul>
+                                <li>Seamless pipelines for model training and data processing</li>
+                                <li>Agent development with multiple LLM backends</li>
+                                <li>Integration examples for each tool</li>
+                                <li>API deployment patterns</li>
+                                <li>Graph-based knowledge management</li>
+                            </ul>
+                        </div>
+
+                        <div class="project-buttons">
+                            <a href="https://github.com/Koushik7893/Langchain_Projects" target="_blank" class="btn-code">View Code</a>
+                            <a href="https://drive.google.com/drive/folders/1tPAmQ8DLDNlSWEbiUR0VOP8ZvmlC-3gF" target="_blank" class="btn-gallery">View Gallery</a>
                         </div>
                     </div>
 
                     <!-- LLMs Content -->
                     <div id="llms-content" class="content-panel">
                         <h2>🤖 LLM Fine-tuning Portfolio</h2>
-                        <p>15+ fine-tuned large language models deployed on HuggingFace Hub for various tasks and domains.</p>
+                        <p>14 fine-tuned large language models deployed on HuggingFace Hub for various NLP and CV tasks.</p>
                         
                         <div class="tech-stack">
                             <span class="tech-badge">Python</span>
                             <span class="tech-badge">Transformers</span>
                             <span class="tech-badge">LoRA</span>
                             <span class="tech-badge">PEFT</span>
-                            <span class="tech-badge">Accelerate</span>
+                            <span class="tech-badge">Quantization</span>
                         </div>
 
                         <div class="topics-covered">
-                            <h3>Model Types:</h3>
+                            <h3>Portfolio Includes:</h3>
                             <ul>
-                                <li>Chat & Instruction-following Models</li>
-                                <li>Text Generation Models</li>
-                                <li>Question Answering Models</li>
-                                <li>Domain-specific Fine-tuning (Medical, Legal, Technical)</li>
-                                <li>Multi-lingual Models</li>
+                                <li>14+ fine-tuned models for various tasks</li>
+                                <li>4 preprocessed datasets</li>
+                                <li>1 custom dataset for YOLOv8 number plate detection (created using Roboflow)</li>
+                                <li>Models for NLP tasks (classification, generation, QA)</li>
+                                <li>Models for CV tasks (detection, classification)</li>
                             </ul>
+                        </div>
+
+                        <div class="topics-covered">
                             <h3>Techniques Used:</h3>
                             <ul>
                                 <li>LoRA (Low-Rank Adaptation)</li>
                                 <li>PEFT (Parameter-Efficient Fine-Tuning)</li>
                                 <li>Quantization (4-bit, 8-bit)</li>
-                                <li>Custom Dataset Creation & Curation</li>
+                                <li>Custom dataset creation and curation</li>
                             </ul>
                         </div>
 
                         <div class="external-link-box">
                             <h3>🤗 HuggingFace Profile</h3>
-                            <p>All 15+ models are publicly available on HuggingFace Hub with model cards, usage examples, and performance metrics.</p>
-                            <a href="https://huggingface.co/yourusername" target="_blank" class="btn btn-primary">View HuggingFace Profile →</a>
+                            <p>All 14+ models are publicly available on HuggingFace Hub with model cards, usage examples, and performance metrics.</p>
+                            <div class="project-buttons">
+                                <a href="https://huggingface.co/Koushim" target="_blank" class="btn-code">View HuggingFace Profile</a>
+                                <a href="https://drive.google.com/drive/folders/149bXgyki_dXiH5IfY4NijwX40I2L1hUK" target="_blank" class="btn-gallery">View Gallery</a>
+                            </div>
                         </div>
                     </div>
 
                     <!-- Kaggle Content -->
                     <div id="kaggle-content" class="content-panel">
                         <h2>📊 Kaggle Notebooks Collection</h2>
-                        <p>25+ competition notebooks and experimental analysis covering various ML domains and techniques.</p>
+                        <p>24+ competition notebooks and experimental analysis covering ML, DL, CV, and NLP domains.</p>
                         
                         <div class="tech-stack">
                             <span class="tech-badge">Python</span>
                             <span class="tech-badge">Pandas</span>
                             <span class="tech-badge">XGBoost</span>
                             <span class="tech-badge">Neural Networks</span>
-                            <span class="tech-badge">Visualization</span>
+                            <span class="tech-badge">EDA</span>
                         </div>
 
                         <div class="topics-covered">
                             <h3>Notebook Categories:</h3>
                             <ul>
-                                <li><strong>Competition Solutions:</strong> Structured approaches to Kaggle competitions</li>
-                                <li><strong>EDA Notebooks:</strong> In-depth exploratory data analysis</li>
-                                <li><strong>Model Comparisons:</strong> Benchmarking different ML algorithms</li>
+                                <li><strong>Machine Learning:</strong> Traditional ML algorithms and ensemble methods</li>
+                                <li><strong>Deep Learning:</strong> Neural network architectures and training</li>
+                                <li><strong>Computer Vision:</strong> Image classification and object detection</li>
+                                <li><strong>NLP:</strong> Text classification and language modeling</li>
+                                <li><strong>EDA:</strong> In-depth exploratory data analysis</li>
                                 <li><strong>Feature Engineering:</strong> Creative feature creation techniques</li>
-                                <li><strong>Ensemble Methods:</strong> Stacking, blending, voting classifiers</li>
-                                <li><strong>Deep Learning Experiments:</strong> Custom architectures and training strategies</li>
+                                <li><strong>Model Comparisons:</strong> Benchmarking different approaches</li>
                             </ul>
                         </div>
 
                         <div class="external-link-box">
                             <h3>📊 Kaggle Profile</h3>
-                            <p>Explore 25+ public notebooks with detailed explanations, visualizations, and reproducible results.</p>
-                            <a href="https://kaggle.com/yourusername" target="_blank" class="btn btn-primary">View Kaggle Profile →</a>
+                            <p>Explore 24+ public notebooks with detailed explanations, visualizations, and reproducible results.</p>
+                            <div class="project-buttons">
+                                <a href="https://kaggle.com/koushikreddy09098" target="_blank" class="btn-code">View Kaggle Profile</a>
+                                <a href="https://drive.google.com/drive/folders/1Ulw14Eu7YwTYgVHDotw1AeNm1oQvdtnH" target="_blank" class="btn-gallery">View Gallery</a>
+                            </div>
                         </div>
                     </div>
 
                     <!-- ML Platform Content -->
                     <div id="ml-platform-content" class="content-panel">
-                        <h2>🛠️ AI/ML Model Management Platform</h2>
-                        <p>Complete platform for training, comparing, and managing machine learning models with automated workflows.</p>
+                        <h2>🛠️ Machine Learning Platform</h2>
+                        <p>Complete platform for model exploration, training, comparison, and deployment with interactive web interface.</p>
                         
                         <div class="status-badge">
-                            <span class="badge-complete">✅ ML Module Complete</span>
-                            <span class="badge-progress">🔄 Expanding: CV/NLP/K8s</span>
+                            <span class="badge-complete">✅ Fully Functional</span>
+                            <span class="badge-progress">🔄 Continuous Optimization</span>
                         </div>
 
                         <div class="tech-stack">
@@ -452,92 +592,46 @@
                             <span class="tech-badge">Scikit-learn</span>
                             <span class="tech-badge">XGBoost</span>
                             <span class="tech-badge">MLflow</span>
-                            <span class="tech-badge">PostgreSQL</span>
+                            <span class="tech-badge">Optuna</span>
                         </div>
 
                         <div class="features-list">
                             <h3>Platform Features:</h3>
                             <div class="feature-grid">
                                 <div class="feature-item">
-                                    <strong>📁 Dataset Management</strong>
-                                    <p>Upload, preprocess, and version control datasets</p>
+                                    <strong>📁 Data Management</strong>
+                                    <p>Upload, visualize, and explore datasets with comprehensive statistics</p>
                                 </div>
                                 <div class="feature-item">
-                                    <strong>🤖 Multi-Model Training</strong>
-                                    <p>Classification, regression, time series models</p>
+                                    <strong>🤖 Model Training</strong>
+                                    <p>Train multiple ML models with custom parameters</p>
                                 </div>
                                 <div class="feature-item">
-                                    <strong>⚙️ Auto Hyperparameter Tuning</strong>
-                                    <p>Grid search, random search, Bayesian optimization</p>
+                                    <strong>⚙️ Hyperparameter Tuning</strong>
+                                    <p>Optuna integration for automated optimization</p>
                                 </div>
                                 <div class="feature-item">
                                     <strong>📊 Model Comparison</strong>
                                     <p>Side-by-side performance metrics and visualization</p>
                                 </div>
                                 <div class="feature-item">
-                                    <strong>🔍 SHAP Explainability</strong>
-                                    <p>Model interpretation and feature importance</p>
+                                    <strong>💬 Data Chatbot</strong>
+                                    <p>Interactive Q&A about your dataset</p>
                                 </div>
                                 <div class="feature-item">
-                                    <strong>📈 Experiment Tracking</strong>
-                                    <p>MLflow integration for complete tracking</p>
+                                    <strong>📈 Visualization</strong>
+                                    <p>Comprehensive charts and model insights</p>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="project-status">
-                            <h3>Current Status & Roadmap:</h3>
-                            <p><strong>✅ Complete:</strong> Core ML functionality for traditional machine learning models</p>
-                            <p><strong>🔄 In Progress:</strong> Integrating Computer Vision and NLP modules, Kubernetes deployment</p>
-                        </div>
-
                         <div class="note-box">
-                            <p><strong>Note:</strong> This platform is also used by freelance clients for their ML projects, demonstrating real-world applicability.</p>
-                        </div>
-                    </div>
-
-                    <!-- Content Generator Content -->
-                    <div id="content-gen-content" class="content-panel">
-                        <h2>✨ AI-Powered Content Generator</h2>
-                        <p>Intelligent content generation platform using large language models for various content types.</p>
-                        
-                        <div class="status-badge">
-                            <span class="badge-complete">✅ Core Complete</span>
+                            <p><strong>Note:</strong> Fully functional platform used by freelance clients for ML projects. Continuous optimization and feature additions in progress.</p>
                         </div>
 
-                        <div class="tech-stack">
-                            <span class="tech-badge">Python</span>
-                            <span class="tech-badge">Streamlit</span>
-                            <span class="tech-badge">OpenAI API</span>
-                            <span class="tech-badge">LangChain</span>
-                            <span class="tech-badge">Transformers</span>
-                        </div>
-
-                        <div class="features-list">
-                            <h3>Generation Capabilities:</h3>
-                            <ul>
-                                <li>Blog Posts & Articles</li>
-                                <li>Social Media Content</li>
-                                <li>Product Descriptions</li>
-                                <li>Email Templates</li>
-                                <li>Creative Writing</li>
-                                <li>Code Documentation</li>
-                            </ul>
-                        </div>
-
-                        <div class="features-list">
-                            <h3>Key Features:</h3>
-                            <ul>
-                                <li>Multiple LLM backends (GPT, Claude, Open-source)</li>
-                                <li>Customizable tone and style</li>
-                                <li>Template-based generation</li>
-                                <li>Batch processing</li>
-                                <li>Export in multiple formats</li>
-                            </ul>
-                        </div>
-
-                        <div class="note-box">
-                            <p><strong>Note:</strong> Used both for personal projects and by freelance clients for content creation workflows.</p>
+                        <div class="project-buttons">
+                            <a href="https://github.com/Koushik7893/Machine-Learning-Platform-for-Model-Exploration-Testing-Web-App" target="_blank" class="btn-code">View Code</a>
+                            <a href="https://drive.google.com/drive/folders/1LhBERJ7v3-oXHo9jBJtzBmOd-ziy6zV-" target="_blank" class="btn-gallery">View Gallery</a>
                         </div>
                     </div>
                 </main>
@@ -548,12 +642,12 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Your Name. All rights reserved.</p>
+            <p>&copy; 2026 Koushik Reddy. All rights reserved.</p>
             <div class="footer-links">
-                <a href="https://github.com/yourusername" target="_blank">GitHub</a>
-                <a href="https://huggingface.co/yourusername" target="_blank">HuggingFace</a>
-                <a href="https://kaggle.com/yourusername" target="_blank">Kaggle</a>
-                <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
+                <a href="https://github.com/Koushik7893" target="_blank">GitHub</a>
+                <a href="https://huggingface.co/Koushim" target="_blank">HuggingFace</a>
+                <a href="https://kaggle.com/koushikreddy09098" target="_blank">Kaggle</a>
+                <a href="http://www.linkedin.com/in/koushik-reddy-k-790938257" target="_blank">LinkedIn</a>
             </div>
         </div>
     </footer>

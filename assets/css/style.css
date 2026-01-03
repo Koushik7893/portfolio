@@ -833,6 +833,88 @@ body {
 }
 
 /* ===========================
+   PROJECT BUTTONS (REDESIGNED)
+   =========================== */
+
+/* Container for buttons */
+.project-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+/* GitHub/Code Link Button */
+.btn-code {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 20px;
+    background: transparent;
+    color: var(--primary-color);
+    text-decoration: none;
+    border: 2px solid var(--primary-color);
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-code::after {
+    content: '→';
+    position: absolute;
+    right: 15px;
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: all 0.3s ease;
+}
+
+.btn-code:hover {
+    background: var(--primary-color);
+    color: white;
+    padding-right: 35px;
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.btn-code:hover::after {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Gallery Button */
+.btn-gallery {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    background: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: var(--transition);
+    border: none;
+}
+
+.btn-gallery:hover {
+    background: var(--primary-dark);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+/* Secondary variant for gallery */
+.btn-gallery-secondary {
+    background: var(--secondary-color);
+}
+
+.btn-gallery-secondary:hover {
+    background: var(--secondary-bright);
+}
+
+/* ===========================
    FEATURE GRID
    =========================== */
 .feature-grid,
@@ -1145,12 +1227,154 @@ body {
 }
 
 /* ===========================
+   LAYOUT TOGGLE BUTTON
+   =========================== */
+.layout-toggle-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.layout-toggle {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    width: 45px;
+    height: 45px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 1.3rem;
+    transition: var(--transition);
+    box-shadow: var(--shadow-sm);
+}
+
+.layout-toggle:hover {
+    background: var(--primary-dark);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.layout-toggle .layout-icon {
+    display: block;
+}
+
+/* ===========================
+   STUDENT PROJECTS LAYOUTS
+   =========================== */
+
+/* Card Layout (Default) */
+.student-projects-container.cards-layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 25px;
+}
+
+.student-projects-container.cards-layout .project-card {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Vertical List Layout */
+.student-projects-container.vertical-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.student-projects-container.vertical-layout .project-card {
+    display: block;
+    max-width: 100%;
+}
+
+.student-projects-container.vertical-layout .project-card h4 {
+    font-size: 1.4rem;
+}
+
+.student-projects-container.vertical-layout .project-card p {
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+/* ===========================
+   VERTICAL SECTIONS (Websites, Chatbots)
+   =========================== */
+.vertical-section {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.vertical-item {
+    background: var(--card-background);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: var(--shadow-card);
+    transition: var(--transition);
+}
+
+.vertical-item:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-card-hover);
+}
+
+.vertical-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: var(--text-primary);
+}
+
+.vertical-item p {
+    color: var(--text-secondary);
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.vertical-item .tech-stack {
+    margin: 20px 0;
+}
+
+.vertical-item .features-list {
+    margin: 20px 0;
+}
+
+.vertical-item .features-list h4 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: var(--text-primary);
+}
+
+.vertical-item .features-list ul {
+    padding-left: 25px;
+    color: var(--text-secondary);
+}
+
+.vertical-item .features-list ul li {
+    margin-bottom: 8px;
+}
+
+.vertical-item .project-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+/* ===========================
    RESPONSIVE DESIGN
    =========================== */
 @media (max-width: 1024px) {
     .work-layout {
         grid-template-columns: 220px 1fr;
         gap: 30px;
+    }
+    
+    .student-projects-container.cards-layout {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     }
 }
 

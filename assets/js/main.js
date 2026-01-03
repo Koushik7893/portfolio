@@ -1,5 +1,5 @@
 // ===========================
-// DARK MODE TOGGLE
+// DARK MODE TOGGLE (DEFAULT: DARK)
 // ===========================
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -7,8 +7,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const themeIcon = document.querySelector('.theme-icon');
     const html = document.documentElement;
     
-    // Check for saved theme preference or default to 'light'
-    const currentTheme = localStorage.getItem('theme') || 'light';
+    // Set dark mode as default
+    const currentTheme = localStorage.getItem('theme') || 'dark';
     html.setAttribute('data-theme', currentTheme);
     
     // Update icon based on current theme
@@ -36,6 +36,55 @@ document.addEventListener('DOMContentLoaded', function() {
     function updateThemeIcon(theme) {
         if (themeIcon) {
             themeIcon.textContent = theme === 'light' ? '🌙' : '☀️';
+        }
+    }
+});
+
+
+// ===========================
+// PREVENT FLASH OF LIGHT MODE
+// ===========================
+(function() {
+    const theme = localStorage.getItem('theme') || 'dark';
+    document.documentElement.setAttribute('data-theme', theme);
+})();
+
+
+// ===========================
+// STUDENT PROJECTS LAYOUT TOGGLE
+// ===========================
+
+document.addEventListener('DOMContentLoaded', function() {
+    const layoutToggle = document.getElementById('layout-toggle');
+    const projectsContainer = document.querySelector('.student-projects-container');
+    
+    if (layoutToggle && projectsContainer) {
+        // Get saved layout preference or default to 'cards'
+        const savedLayout = localStorage.getItem('projectsLayout') || 'cards';
+        projectsContainer.classList.add(savedLayout + '-layout');
+        updateToggleIcon(savedLayout);
+        
+        layoutToggle.addEventListener('click', function() {
+            const currentLayout = projectsContainer.classList.contains('cards-layout') ? 'cards' : 'vertical';
+            const newLayout = currentLayout === 'cards' ? 'vertical' : 'cards';
+            
+            // Remove old layout class and add new one
+            projectsContainer.classList.remove(currentLayout + '-layout');
+            projectsContainer.classList.add(newLayout + '-layout');
+            
+            // Save preference
+            localStorage.setItem('projectsLayout', newLayout);
+            
+            // Update icon
+            updateToggleIcon(newLayout);
+        });
+        
+        function updateToggleIcon(layout) {
+            const icon = layoutToggle.querySelector('.layout-icon');
+            if (icon) {
+                icon.textContent = layout === 'cards' ? '☰' : '⊞';
+                layoutToggle.title = layout === 'cards' ? 'Switch to list view' : 'Switch to card view';
+            }
         }
     }
 });
@@ -98,10 +147,16 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Show welcome content by default
+    // Show welcome content by default on my-work page
     const welcomeContent = document.getElementById('welcome-content');
     if (welcomeContent) {
         welcomeContent.classList.add('active');
+    }
+    
+    // Show student consulting by default on freelance page
+    const studentConsultingContent = document.getElementById('student-consulting-content');
+    if (studentConsultingContent && !welcomeContent) {
+        studentConsultingContent.classList.add('active');
     }
 });
 
@@ -128,7 +183,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 
 // ===========================
-// MOBILE NAVIGATION TOGGLE (if needed for hamburger menu)
+// MOBILE NAVIGATION TOGGLE
 // ===========================
 
 function initMobileNav() {
@@ -243,7 +298,7 @@ setActiveNavLink();
 
 
 // ===========================
-// COPY TO CLIPBOARD (for email or code snippets)
+// COPY TO CLIPBOARD
 // ===========================
 
 function copyToClipboard(text) {
@@ -348,7 +403,7 @@ function showNotification(message, duration = 3000) {
 
 
 // ===========================
-// LOADING STATE FOR SLOW CONNECTIONS
+// LOADING STATE
 // ===========================
 
 window.addEventListener('load', function() {
@@ -420,7 +475,7 @@ window.addEventListener('resize', function() {
 
 
 // ===========================
-// BACK TO TOP BUTTON (optional)
+// BACK TO TOP BUTTON
 // ===========================
 
 function initBackToTop() {
@@ -515,7 +570,7 @@ if ('IntersectionObserver' in window) {
 
 
 // ===========================
-// CONSOLE MESSAGE (optional)
+// CONSOLE MESSAGE
 // ===========================
 
 console.log('%cWelcome to My Portfolio!', 'color: #2563EB; font-size: 20px; font-weight: bold;');

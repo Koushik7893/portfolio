@@ -579,57 +579,127 @@
                     <!-- ML Platform Content -->
                     <div id="ml-platform-content" class="content-panel">
                         <h2>🛠️ Machine Learning Platform</h2>
-                        <p>Complete platform for model exploration, training, comparison, and deployment with interactive web interface.</p>
+                        <p>Complete platform for model exploration, training, comparison, and deployment with interactive web interface and AutoML capabilities.</p>
                         
                         <div class="status-badge">
                             <span class="badge-complete">✅ Fully Functional</span>
                             <span class="badge-progress">🔄 Continuous Optimization</span>
                         </div>
 
-                        <div class="tech-stack">
-                            <span class="tech-badge">Streamlit</span>
-                            <span class="tech-badge">Flask</span>
-                            <span class="tech-badge">Scikit-learn</span>
-                            <span class="tech-badge">XGBoost</span>
-                            <span class="tech-badge">MLflow</span>
-                            <span class="tech-badge">Optuna</span>
+                        <div class="features-list" style="margin-top: 30px;">
+                            <h3>🔐 User Authentication</h3>
+                            <ul>
+                                <li>Complete user management: Login, Register, Profile</li>
+                                <li>Secure authentication with AWS-hosted PostgreSQL</li>
+                                <li>Session management and user-specific workspaces</li>
+                            </ul>
                         </div>
 
                         <div class="features-list">
-                            <h3>Platform Features:</h3>
-                            <div class="feature-grid">
-                                <div class="feature-item">
-                                    <strong>📁 Data Management</strong>
-                                    <p>Upload, visualize, and explore datasets with comprehensive statistics</p>
-                                </div>
-                                <div class="feature-item">
-                                    <strong>🤖 Model Training</strong>
-                                    <p>Train multiple ML models with custom parameters</p>
-                                </div>
-                                <div class="feature-item">
-                                    <strong>⚙️ Hyperparameter Tuning</strong>
-                                    <p>Optuna integration for automated optimization</p>
-                                </div>
-                                <div class="feature-item">
-                                    <strong>📊 Model Comparison</strong>
-                                    <p>Side-by-side performance metrics and visualization</p>
-                                </div>
-                                <div class="feature-item">
-                                    <strong>💬 Data Chatbot</strong>
-                                    <p>Interactive Q&A about your dataset</p>
-                                </div>
-                                <div class="feature-item">
-                                    <strong>📈 Visualization</strong>
-                                    <p>Comprehensive charts and model insights</p>
-                                </div>
-                            </div>
+                            <h3>📊 Dataset Management</h3>
+                            <ul>
+                                <li>10 Preloaded datasets (5 classification, 5 regression)</li>
+                                <li>Custom dataset upload support (CSV, Excel)</li>
+                                <li>Interactive Exploratory Data Analysis (EDA) with Seaborn</li>
+                                <li>Comprehensive statistical analysis and visualization</li>
+                                <li>Data quality checks and preprocessing options</li>
+                            </ul>
                         </div>
 
-                        <div class="note-box">
-                            <p><strong>Note:</strong> Fully functional platform used by freelance clients for ML projects. Continuous optimization and feature additions in progress.</p>
+                        <div class="features-list">
+                            <h3>🤖 Model Development</h3>
+                            <ul>
+                                <li>AutoML integration with TPOT and Optuna</li>
+                                <li>Hyperparameter tuning (GridSearchCV, RandomizedSearchCV)</li>
+                                <li>Custom model configuration with flexible parameters</li>
+                                <li>SHAP analysis for model interpretability</li>
+                                <li>MLflow experiment tracking and model versioning</li>
+                                <li>Support for multiple model families (tree-based, ensemble, neural networks)</li>
+                            </ul>
                         </div>
 
-                        <div class="project-buttons">
+                        <div class="features-list">
+                            <h3>📈 Model Comparison & Evaluation</h3>
+                            <ul>
+                                <li>Cross-model performance analysis with visual benchmarks</li>
+                                <li>Confusion matrices and comprehensive metrics</li>
+                                <li>Parameter comparison across different models</li>
+                                <li>Training history and learning curves</li>
+                                <li>Model export and deployment preparation</li>
+                            </ul>
+                        </div>
+
+                        <div class="features-list">
+                            <h3>💬 AI Assistant</h3>
+                            <ul>
+                                <li>Groq API powered intelligent chatbot</li>
+                                <li>Wikipedia and YouTube integration for research</li>
+                                <li>Session history tracking for continuity</li>
+                                <li>Context-aware responses about datasets and models</li>
+                            </ul>
+                        </div>
+
+                        <div class="features-list">
+                            <h3>🚀 CI/CD Pipeline</h3>
+                            <ul>
+                                <li>GitHub Actions automation for testing and deployment</li>
+                                <li>Docker containerization for reproducibility</li>
+                                <li>AWS deployment (ECR for container registry, EC2 for hosting, S3 for storage)</li>
+                                <li>Automated build, test, and deployment workflow</li>
+                            </ul>
+                        </div>
+
+                        <div class="topics-covered" style="margin-top: 40px;">
+                            <h3>🛠️ Tech Stack</h3>
+                            
+                            <p><strong>Frontend & UI:</strong></p>
+                            <ul>
+                                <li>Flask and Streamlit for interactive web interfaces</li>
+                                <li>Seaborn and Matplotlib for data visualization</li>
+                                <li>Responsive design for cross-device compatibility</li>
+                            </ul>
+                            
+                            <p><strong>Backend & Database:</strong></p>
+                            <ul>
+                                <li>Flask with SQLAlchemy ORM</li>
+                                <li>PostgreSQL hosted on AWS</li>
+                                <li>RESTful API architecture</li>
+                            </ul>
+                            
+                            <p><strong>Machine Learning:</strong></p>
+                            <ul>
+                                <li>Scikit-learn for classical ML algorithms</li>
+                                <li>TensorFlow and PyTorch for deep learning</li>
+                                <li>TPOT and Optuna for AutoML and hyperparameter optimization</li>
+                            </ul>
+                            
+                            <p><strong>MLOps & Deployment:</strong></p>
+                            <ul>
+                                <li>MLflow for experiment tracking and model registry</li>
+                                <li>Apache Airflow for workflow orchestration</li>
+                                <li>Docker for containerization</li>
+                                <li>AWS services (EC2, ECR, S3) for cloud deployment</li>
+                                <li>GitHub Actions for CI/CD automation</li>
+                            </ul>
+                        </div>
+
+                        <div class="highlight-box" style="margin-top: 40px;">
+                            <h3>🔮 Upcoming Features</h3>
+                            <ul>
+                                <li><strong>NLP Task Support:</strong> Text classification, sentiment analysis, NER capabilities</li>
+                                <li><strong>Computer Vision Workflows:</strong> Image classification and object detection pipelines</li>
+                                <li><strong>Time Series Forecasting:</strong> ARIMA, LSTM, Prophet integration</li>
+                                <li><strong>Enhanced Chatbot:</strong> Retrieval-based system with Pinecone vector database</li>
+                                <li><strong>Advanced Model Comparison:</strong> Statistical significance testing and ensemble methods</li>
+                                <li><strong>Airflow Task Scheduling:</strong> Automated retraining and batch inference</li>
+                            </ul>
+                        </div>
+
+                        <div class="note-box" style="margin-top: 30px;">
+                            <p><strong>Current Status:</strong> Platform is fully functional and actively used by clients for ML projects. Continuous optimization and feature expansion in progress based on user feedback and emerging ML best practices.</p>
+                        </div>
+
+                        <div class="project-buttons" style="margin-top: 30px;">
                             <a href="https://github.com/Koushik7893/Machine-Learning-Platform-for-Model-Exploration-Testing-Web-App" target="_blank" class="btn-code">View Code</a>
                             <a href="https://drive.google.com/drive/folders/1LhBERJ7v3-oXHo9jBJtzBmOd-ziy6zV-" target="_blank" class="btn-gallery">View Gallery</a>
                         </div>

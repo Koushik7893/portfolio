@@ -147,16 +147,10 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Show welcome content by default on my-work page
+    // Show welcome content by default on both pages
     const welcomeContent = document.getElementById('welcome-content');
     if (welcomeContent) {
         welcomeContent.classList.add('active');
-    }
-    
-    // Show student consulting by default on freelance page
-    const studentConsultingContent = document.getElementById('student-consulting-content');
-    if (studentConsultingContent && !welcomeContent) {
-        studentConsultingContent.classList.add('active');
     }
 });
 

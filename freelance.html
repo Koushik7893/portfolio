@@ -46,16 +46,10 @@
                 <!-- Left Sidebar -->
                 <aside class="sidebar">
                     <div class="sidebar-section">
-                        <h3 class="sidebar-title">👨‍🎓 Student Projects</h3>
+                        <h3 class="sidebar-title">📦 Delivered Projects</h3>
                         <ul class="sidebar-menu">
-                            <li><a href="#" class="sidebar-link active" data-category="student-consulting">ML Consulting</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="sidebar-section">
-                        <h3 class="sidebar-title">💻 Web Applications</h3>
-                        <ul class="sidebar-menu">
-                            <li><a href="#" class="sidebar-link" data-category="websites">Websites</a></li>
+                            <li><a href="#" class="sidebar-link" data-category="student-consulting">Student ML Consulting</a></li>
+                            <li><a href="#" class="sidebar-link" data-category="websites">Web Applications</a></li>
                         </ul>
                     </div>
 
@@ -68,17 +62,56 @@
                     </div>
 
                     <div class="sidebar-section">
-                        <h3 class="sidebar-title">📋 Consulting</h3>
+                        <h3 class="sidebar-title">📋 Proof of Concepts</h3>
                         <ul class="sidebar-menu">
-                            <li><a href="#" class="sidebar-link" data-category="pocs">Proof of Concepts</a></li>
+                            <li><a href="#" class="sidebar-link" data-category="energy-poc">Energy Forecasting</a></li>
+                            <li><a href="#" class="sidebar-link" data-category="resume-poc">Resume Screening</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="sidebar-section">
+                        <h3 class="sidebar-title">📊 Analytics & Tools</h3>
+                        <ul class="sidebar-menu">
+                            <li><a href="#" class="sidebar-link" data-category="dashboards">Dashboards</a></li>
+                            <li><a href="#" class="sidebar-link" data-category="dev-tools">Development Tools</a></li>
                         </ul>
                     </div>
                 </aside>
 
                 <!-- Right Content Area -->
                 <main class="content-area">
-                    <!-- Student Consulting Content (Default Active) -->
-                    <div id="student-consulting-content" class="content-panel active">
+                    <!-- Welcome Content (Default) -->
+                    <div id="welcome-content" class="content-panel active">
+                        <h2>Welcome to Freelance Work</h2>
+                        <p>Professional AI/ML services delivered over 2 years, from student consulting to enterprise client solutions.</p>
+                        
+                        <div class="guide-box">
+                            <h3>📊 Portfolio Overview</h3>
+                            <ul>
+                                <li><strong>9 Student ML Projects</strong> - Complete project lifecycle guidance</li>
+                                <li><strong>2 Web Applications</strong> - Full-stack development</li>
+                                <li><strong>3 Chatbot Systems</strong> - RAG, adaptive learning, agentic AI</li>
+                                <li><strong>1 Content Generator</strong> - LLM-powered content creation</li>
+                                <li><strong>2 System Design PoCs</strong> - ML architecture consulting</li>
+                                <li><strong>2 Analytics Dashboards</strong> - Monitoring and visualization</li>
+                                <li><strong>1 Development Tool</strong> - AI-powered code generation</li>
+                            </ul>
+                        </div>
+
+                        <div class="highlight-box">
+                            <h3>💼 Work Types</h3>
+                            <ul>
+                                <li><strong>Delivered Projects:</strong> Complete implementations with code and deployment</li>
+                                <li><strong>Client Consulting:</strong> Architecture design and technical guidance</li>
+                                <li><strong>Proof of Concepts:</strong> System design and methodology recommendations</li>
+                            </ul>
+                        </div>
+
+                        <p style="margin-top: 30px; color: var(--text-secondary);">Navigate using the sidebar to explore specific project categories. Each project includes detailed descriptions, tech stacks, and deliverables.</p>
+                    </div>
+
+                    <!-- Student Consulting Content -->
+                    <div id="student-consulting-content" class="content-panel">
                         <h2>👨‍🎓 Student ML Consulting</h2>
                         <p>Guided 9+ students through complete ML project lifecycle from problem definition to deployment.</p>
 
@@ -91,7 +124,22 @@
 
                         <!-- Student Projects Container -->
                         <div class="student-projects-container cards-layout">
-                            <!-- Project 1: License Verification -->
+                            <!-- Project 1: Traffic Signal -->
+                            <div class="project-card">
+                                <h4>🚦 AI-Powered Traffic Signal Control System</h4>
+                                <p>Real-time adaptive traffic management using YOLOv8 for vehicle detection and Q-Learning reinforcement algorithm for dynamic signal timing optimization, reducing congestion and wait times compared to fixed-time systems.</p>
+                                <div class="card-tech">
+                                    <span>YOLOv8</span>
+                                    <span>Q-Learning</span>
+                                    <span>OpenCV</span>
+                                    <span>Reinforcement Learning</span>
+                                </div>
+                                <div class="project-buttons">
+                                    <a href="https://drive.google.com/drive/folders/1XHpTo0ImJ9xfMrr1ML4mSBuHWRMhvqec" target="_blank" class="btn-gallery">View Gallery</a>
+                                </div>
+                            </div>
+
+                            <!-- Project 2: License Verification -->
                             <div class="project-card">
                                 <h4>🎯 Multi-Modal License Verification System</h4>
                                 <p>Advanced face recognition for driver's license verification combining MobileNetV2 embeddings, PCA features, and LSTM temporal analysis with FAISS-powered vector search achieving 85%+ variance capture with 120 PCA components.</p>
@@ -105,21 +153,6 @@
                                 <div class="project-buttons">
                                     <a href="https://github.com/Koushik7893/License-Verification-System-Flask-Inference-App" target="_blank" class="btn-code">View Code</a>
                                     <a href="https://drive.google.com/drive/folders/1WU1FdtO2pGB5vcnCSh_EGN6m4KVUcJ4u" target="_blank" class="btn-gallery">View Gallery</a>
-                                </div>
-                            </div>
-
-                            <!-- Project 2: Traffic Signal -->
-                            <div class="project-card">
-                                <h4>🚦 AI-Powered Traffic Signal Control System</h4>
-                                <p>Real-time adaptive traffic management using YOLOv8 for vehicle detection and Q-Learning reinforcement algorithm for dynamic signal timing optimization, reducing congestion and wait times compared to fixed-time systems.</p>
-                                <div class="card-tech">
-                                    <span>YOLOv8</span>
-                                    <span>Q-Learning</span>
-                                    <span>OpenCV</span>
-                                    <span>Reinforcement Learning</span>
-                                </div>
-                                <div class="project-buttons">
-                                    <a href="https://drive.google.com/drive/folders/1XHpTo0ImJ9xfMrr1ML4mSBuHWRMhvqec" target="_blank" class="btn-gallery">View Gallery</a>
                                 </div>
                             </div>
 
@@ -250,7 +283,6 @@
                                         <li>Home, About, Contact, Gallery pages with responsive design</li>
                                         <li>Volunteer registration forms with validation</li>
                                         <li>Donation tracking interface for contributors</li>
-                                        <li>Gallery showcasing facility and events</li>
                                         <li>Mobile-friendly responsive design</li>
                                     </ul>
                                 </div>
@@ -262,7 +294,7 @@
                                         <li>Volunteer form approval/rejection system</li>
                                         <li>Donation management and tracking</li>
                                         <li>Gallery image management (add/remove/organize)</li>
-                                        <li>Resident management system with medical records</li>
+                                        <li>Resident management with medical records</li>
                                         <li>Staff scheduling and management</li>
                                         <li>CRUD operations for all entities</li>
                                     </ul>
@@ -276,7 +308,7 @@
                                 </div>
                                 
                                 <div class="note-box" style="margin-top: 20px;">
-                                    <p><strong>Note:</strong> Sample implementation demonstrating full functionality. Screenshots show sanitized version to maintain privacy. Deployment handled separately by client.</p>
+                                    <p><strong>Note:</strong> Sample implementation demonstrating full functionality. Screenshots show sanitized version to maintain privacy.</p>
                                 </div>
                                 
                                 <div class="project-buttons">
@@ -421,57 +453,78 @@
                         <h2>✨ AI-Powered Content Generator</h2>
                         <p><strong>Type:</strong> 🔒 Confidential Client Delivery</p>
                         
-                        <p>Intelligent content generation system using large language models for automated creation of educational materials, blog posts, and articles with customizable output.</p>
-                        
-                        <div class="features-list">
-                            <h3>Generation Capabilities:</h3>
-                            <ul>
-                                <li>Multiple content types: blogs, articles, educational materials, social media posts</li>
-                                <li>Customizable tone and style: formal, casual, technical, creative</li>
-                                <li>Template-based generation for consistency across content</li>
-                                <li>Batch processing for large-scale content creation</li>
-                                <li>Export in multiple formats: Markdown, HTML, PDF, plain text</li>
-                                <li>Content quality validation and editing interface</li>
-                            </ul>
+                        <div class="vertical-section">
+                            <div class="vertical-item">
+                                <p>Intelligent content generation system using large language models for automated creation of educational materials, blog posts, and articles with customizable output for an educational content platform.</p>
+                                
+                                <div class="features-list">
+                                    <h3>Generation Capabilities:</h3>
+                                    <ul>
+                                        <li>Multiple content types: blogs, articles, educational materials, social media posts</li>
+                                        <li>Customizable tone and style: formal, casual, technical, creative</li>
+                                        <li>Template-based generation for consistency across content</li>
+                                        <li>Batch processing for large-scale content creation</li>
+                                        <li>Export in multiple formats: Markdown, HTML, PDF, plain text</li>
+                                        <li>Content quality validation and editing interface</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="tech-stack">
+                                    <span class="tech-badge">LLMs</span>
+                                    <span class="tech-badge">LangChain</span>
+                                    <span class="tech-badge">Streamlit</span>
+                                    <span class="tech-badge">OpenAI/Claude APIs</span>
+                                    <span class="tech-badge">Prompt Engineering</span>
+                                </div>
+                                
+                                <div class="confidentiality-notice" style="margin-top: 30px;">
+                                    <h3>⚠️ Confidentiality Notice</h3>
+                                    <p>This project was delivered to a client for production use. Original implementation, client data, specific use cases, and generated content are confidential and cannot be shared. Architecture and technical approach can be discussed in interviews.</p>
+                                </div>
+                                
+                                <p style="margin-top: 20px;"><strong>Status:</strong> ✅ Delivered to client</p>
+                            </div>
                         </div>
-                        
-                        <div class="tech-stack">
-                            <span class="tech-badge">LLMs</span>
-                            <span class="tech-badge">LangChain</span>
-                            <span class="tech-badge">Streamlit</span>
-                            <span class="tech-badge">OpenAI/Claude APIs</span>
-                            <span class="tech-badge">Prompt Engineering</span>
-                        </div>
-                        
-                        <div class="confidentiality-notice" style="margin-top: 30px;">
-                            <h3>⚠️ Confidentiality Notice</h3>
-                            <p>This project was delivered to a client for production use. Original implementation, client data, specific use cases, and generated content are confidential and cannot be shared. Architecture and technical approach can be discussed in interviews.</p>
-                        </div>
-                        
-                        <p style="margin-top: 20px;"><strong>Status:</strong> ✅ Delivered to client</p>
                     </div>
 
-                    <!-- PoCs Content -->
-                    <div id="pocs-content" class="content-panel">
-                        <h2>📋 Proof of Concept Projects</h2>
-                        <p>System design consultations and technical demonstrations for client evaluation.</p>
-
+                    <!-- Energy PoC Content -->
+                    <div id="energy-poc-content" class="content-panel">
+                        <h2>📋 Energy Demand Forecasting System</h2>
+                        <p><strong>Type:</strong> Proof of Concept - System Design & Consultation</p>
+                        
                         <div class="vertical-section">
-                            <!-- Energy Forecasting -->
                             <div class="vertical-item">
-                                <h3>📋 Energy Demand Forecasting & Optimization System</h3>
-                                <p><strong>Type:</strong> Proof of Concept - System Design & Consultation</p>
-                                
                                 <p>Client required comprehensive understanding of ML concepts and practical system design for energy demand forecasting. Provided end-to-end technical guidance from fundamentals to deployment architecture.</p>
                                 
                                 <div class="features-list">
-                                    <h4>Knowledge Transfer Delivered:</h4>
+                                    <h3>Consultation Process:</h3>
+                                    
+                                    <h4>1. ML/DL Fundamentals</h4>
                                     <ul>
-                                        <li><strong>ML Fundamentals:</strong> Core concepts, model selection criteria, training methodologies</li>
-                                        <li><strong>Time Series Concepts:</strong> Forecasting fundamentals, model comparison (XGBoost, LSTM, TCN, TFT), seasonal patterns</li>
-                                        <li><strong>Feature Engineering:</strong> Lag features, rolling statistics, cyclical encodings, weather integration</li>
-                                        <li><strong>System Architecture:</strong> ETL pipeline (Airflow), data integration (SCADA, weather APIs), database design (PostgreSQL)</li>
-                                        <li><strong>Deployment Patterns:</strong> API design (Flask), dashboard (Plotly Dash), monitoring strategies</li>
+                                        <li>Core ML concepts for time-series forecasting</li>
+                                        <li>Model selection criteria and evaluation strategies</li>
+                                        <li>Feature engineering best practices for temporal data</li>
+                                    </ul>
+                                    
+                                    <h4>2. Cloud & MLOps Principles</h4>
+                                    <ul>
+                                        <li>Infrastructure design for scalable ML systems</li>
+                                        <li>Model versioning and experiment tracking</li>
+                                        <li>Monitoring and observability patterns</li>
+                                    </ul>
+                                    
+                                    <h4>3. Model Training & Evaluation</h4>
+                                    <ul>
+                                        <li>End-to-end pipeline design (ETL, feature engineering, training)</li>
+                                        <li>Model comparison: XGBoost, LSTM, TCN, TFT</li>
+                                        <li>Performance optimization and validation strategies</li>
+                                    </ul>
+                                    
+                                    <h4>4. Production Deployment</h4>
+                                    <ul>
+                                        <li>CI/CD pipeline architecture with GitHub Actions and Docker</li>
+                                        <li>API design patterns for inference (Flask/FastAPI)</li>
+                                        <li>Dashboard integration for monitoring (Plotly Dash)</li>
                                     </ul>
                                 </div>
                                 
@@ -485,24 +538,54 @@
                                     <span class="tech-badge">Plotly Dash</span>
                                 </div>
                                 
+                                <div class="note-box" style="margin-top: 30px;">
+                                    <p><strong>Outcome:</strong> Client received complete understanding of system design, model approaches, and deployment strategies. Implementation was managed by their engineering team based on provided architectural guidance and best practices.</p>
+                                </div>
+                                
                                 <p style="margin-top: 20px;"><strong>Status:</strong> 📋 Design & Consultation Phase Complete</p>
                             </div>
-                            
-                            <!-- Resume Screening -->
+                        </div>
+                    </div>
+
+                    <!-- Resume PoC Content -->
+                    <div id="resume-poc-content" class="content-panel">
+                        <h2>📋 Resume Screening & Talent Matching System</h2>
+                        <p><strong>Type:</strong> Proof of Concept - System Design & Consultation</p>
+                        
+                        <div class="vertical-section">
                             <div class="vertical-item">
-                                <h3>📋 AI-Powered Resume Screening & Talent Matching System</h3>
-                                <p><strong>Type:</strong> Proof of Concept - System Design & Consultation</p>
-                                
                                 <p>Designed an end-to-end resume screening architecture to automate candidate evaluation against job descriptions using NLP and semantic matching techniques.</p>
                                 
                                 <div class="features-list">
-                                    <h4>System Design Deliverables:</h4>
+                                    <h3>Consultation Process:</h3>
+                                    
+                                    <h4>1. ML/DL Fundamentals</h4>
                                     <ul>
-                                        <li><strong>Document Processing:</strong> Resume parsing (PDF/DOCX), section detection, entity extraction (skills, experience)</li>
-                                        <li><strong>NLP Pipeline:</strong> Transformer embeddings for semantic representation, skill matching logic</li>
-                                        <li><strong>Ranking System:</strong> Cosine similarity, skill match scoring, combined relevance calculation</li>
-                                        <li><strong>ML Classification:</strong> Shortlist/reject predictions, feature engineering strategies</li>
-                                        <li><strong>Dashboard Design:</strong> Recruiter interface (Streamlit), candidate ranking, skill gap analysis</li>
+                                        <li>NLP fundamentals and text processing techniques</li>
+                                        <li>Transformer models and embeddings</li>
+                                        <li>Semantic similarity and matching algorithms</li>
+                                    </ul>
+                                    
+                                    <h4>2. Cloud & MLOps Principles</h4>
+                                    <ul>
+                                        <li>Scalable document processing architecture</li>
+                                        <li>API design for high-throughput screening</li>
+                                        <li>Data pipeline monitoring and logging</li>
+                                    </ul>
+                                    
+                                    <h4>3. System Architecture Design</h4>
+                                    <ul>
+                                        <li>Document parsing (PDF/DOCX) and text extraction</li>
+                                        <li>NLP pipeline: entity extraction, skill matching, semantic embeddings</li>
+                                        <li>Ranking system: cosine similarity, skill scores, combined relevance</li>
+                                        <li>ML classification for shortlist recommendations</li>
+                                    </ul>
+                                    
+                                    <h4>4. Production Deployment</h4>
+                                    <ul>
+                                        <li>REST API development patterns (FastAPI)</li>
+                                        <li>Dashboard design for recruiters (Streamlit)</li>
+                                        <li>Batch processing and real-time inference</li>
                                     </ul>
                                 </div>
                                 
@@ -514,12 +597,105 @@
                                     <span class="tech-badge">Streamlit</span>
                                 </div>
                                 
+                                <div class="note-box" style="margin-top: 30px;">
+                                    <p><strong>Outcome:</strong> Client received comprehensive system design, NLP methodology recommendations, and implementation guidelines. Their development team used this foundation to build the production screening system.</p>
+                                </div>
+                                
                                 <p style="margin-top: 20px;"><strong>Status:</strong> 📋 Design & Consultation Phase Complete</p>
                             </div>
-                            
-                            <!-- Plotly PoC -->
+                        </div>
+                    </div>
+
+                    <!-- Dashboards Content -->
+                    <div id="dashboards-content" class="content-panel">
+                        <h2>📊 Analytics Dashboards</h2>
+                        <p>Visualization and monitoring solutions for ML systems and forecasting models.</p>
+
+                        <div class="vertical-section">
+                            <!-- Energy Dashboard -->
                             <div class="vertical-item">
-                                <h3>🔒 Plotly Code Rewriting PoC</h3>
+                                <h3>📋 Energy Demand Forecasting Dashboard</h3>
+                                <p><strong>Type:</strong> Proof of Concept (linked to Energy Forecasting System)</p>
+                                
+                                <p>Designed a proof-of-concept analytics dashboard to visualize short-term electricity demand forecasts, historical trends, and model performance metrics. The dashboard demonstrates how forecasting outputs from ML and DL models would be monitored and interpreted in a production energy analytics system.</p>
+                                
+                                <div class="features-list">
+                                    <h4>What This PoC Demonstrates:</h4>
+                                    <ul>
+                                        <li>Visualization of real vs. predicted load curves at minute-level granularity</li>
+                                        <li>Horizon-wise forecast comparison across multiple models</li>
+                                        <li>KPI tracking for forecasting accuracy and stability</li>
+                                        <li>Feature importance and temporal pattern insights</li>
+                                        <li>Integration flow between forecasting APIs and visualization layer</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="tech-stack">
+                                    <span class="tech-badge">Python</span>
+                                    <span class="tech-badge">Plotly Dash</span>
+                                    <span class="tech-badge">Streamlit</span>
+                                    <span class="tech-badge">Pandas</span>
+                                    <span class="tech-badge">Flask/FastAPI</span>
+                                </div>
+                                
+                                <div class="note-box" style="margin-top: 20px;">
+                                    <p><strong>Defense:</strong> "This was built as a PoC to demonstrate how energy forecasting models and pipelines integrate with monitoring dashboards for production systems."</p>
+                                </div>
+                            </div>
+                            
+                            <!-- ML Monitoring Dashboard -->
+                            <div class="vertical-item">
+                                <h3>🔒 ML Model Monitoring Dashboard</h3>
+                                <p><strong>Type:</strong> Fully Delivered Dashboard (Client Confidential)</p>
+                                <p><strong>Domain:</strong> ML Platform / Model Operations</p>
+                                
+                                <p>Designed and delivered a production-ready dashboard to monitor machine learning models across training and inference stages. The dashboard provides visibility into model performance, data drift, and prediction behavior, supporting faster debugging and retraining decisions.</p>
+                                
+                                <div class="features-list">
+                                    <h4>What Was Delivered:</h4>
+                                    <ul>
+                                        <li>Model performance tracking across versions and deployments</li>
+                                        <li>Visualization of training vs inference metrics</li>
+                                        <li>Input feature distribution and drift indicators</li>
+                                        <li>Prediction confidence and error trend analysis</li>
+                                        <li>Dashboard structure reusable across multiple models</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="features-list">
+                                    <h4>Typical KPIs Visualized:</h4>
+                                    <ul>
+                                        <li>Accuracy / MAE / MAPE over time</li>
+                                        <li>Prediction error distributions</li>
+                                        <li>Feature drift statistics</li>
+                                        <li>Model version comparisons</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="tech-stack">
+                                    <span class="tech-badge">Python</span>
+                                    <span class="tech-badge">Plotly Dash</span>
+                                    <span class="tech-badge">Streamlit</span>
+                                    <span class="tech-badge">MLflow</span>
+                                    <span class="tech-badge">Pandas</span>
+                                    <span class="tech-badge">PostgreSQL</span>
+                                </div>
+                                
+                                <div class="note-box" style="margin-top: 20px;">
+                                    <p><strong>Defense:</strong> "I delivered the complete monitoring dashboard framework; the client integrated their models and data afterward."</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Development Tools Content -->
+                    <div id="dev-tools-content" class="content-panel">
+                        <h2>🛠️ AI-Powered Development Tools</h2>
+                        <p>Code generation and transformation tools powered by AI.</p>
+
+                        <div class="vertical-section">
+                            <div class="vertical-item">
+                                <h3>🔒 Plotly Code Rewriting System</h3>
                                 <p><strong>Type:</strong> Confidential Demo PoC</p>
                                 
                                 <p>AI-powered system for rewriting Plotly visualization code based on natural language prompts, ensuring generated visualizations match specified requirements.</p>
